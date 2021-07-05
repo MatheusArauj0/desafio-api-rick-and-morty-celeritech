@@ -17,10 +17,19 @@ INSERT INTO tb_local(name, dimension, created_At) VALUES ('Immortality Field Res
 INSERT INTO tb_local(name, dimension, created_At) VALUES ('Post-Apocalyptic Earth', 'Post-Apocalyptic Dimension', NOW());
 INSERT INTO tb_local(name, dimension, created_At) VALUES ('Purge Planet', 'Replacement Dimension', NOW());
 INSERT INTO tb_local(name, dimension, created_At) VALUES ('Venzenulon 7', 'unknown', NOW());
+INSERT INTO tb_local(name, dimension, created_At) VALUES ('unknown', 'unknown', null);
 
 
-INSERT INTO tb_personagem (name, status, specie, gender, location_id, origin_id, created_At) VALUES ('Rick Sanchez', 'Alive', 'Human', 'Male', 1, 1, NOW());
-INSERT INTO tb_personagem (name, status, specie, gender, location_id, origin_id, created_At) VALUES ('Morty Smith', 'Alive', 'Human', 'Male', 2, 2, NOW());
-INSERT INTO tb_personagem (name, status, specie, gender, location_id, origin_id, created_At) VALUES ('Matheus', 'Alive', 'Human', 'Male', 1, 1, NOW());
-INSERT INTO tb_personagem (name, status, specie, gender, location_id, origin_id, created_At) VALUES ('Mack', 'Alive', 'Human', 'Male', 1, 2, NOW());
+INSERT INTO tb_personagem (name, status, specie, gender, origin_id, location_id, created_At) VALUES ('Beth Smith', 'Alive', 'Human', 'Female', 1, 1, NOW());
+INSERT INTO tb_personagem (name, status, specie, gender, origin_id, location_id, created_At) VALUES ('Bill', 'Alive', 'Human', 'Male', 1, 1, NOW());
+INSERT INTO tb_personagem (name, status, specie, gender, origin_id, location_id, created_At) VALUES ('Abadango Cluster Princess', 'Alive', 'Alien', 'Female', 2, 2, NOW());
+INSERT INTO tb_personagem (name, status, specie, gender, origin_id, location_id, created_At) VALUES ('Adjudicator Rick', 'Dead', 'Human', 'Male', 11, 3, NOW());
+INSERT INTO tb_personagem (name, status, specie, gender, origin_id, location_id, created_At) VALUES ('Alan Rails', 'Dead', 'Human', 'Male', 11, 4, NOW());
+INSERT INTO tb_personagem (name, status, specie, gender, origin_id, location_id, created_At) VALUES ('Alexander', 'Dead', 'Human', 'Male', 1, 5, NOW());
+INSERT INTO tb_personagem (name, status, specie, gender, origin_id, location_id, created_At) VALUES ('Baby Legs', 'Alive', 'Human', 'Male', 11, 6, NOW());
+INSERT INTO tb_personagem (name, status, specie, gender, origin_id, location_id, created_At) VALUES ('Lisa', 'Dead', 'Alien', 'Female', 11, 7, NOW());
+INSERT INTO tb_personagem (name, status, specie, gender, origin_id, location_id, created_At) VALUES ('Blue Footprint Guy', 'Dead', 'Human', 'Male', 8, 8, NOW());
+INSERT INTO tb_personagem (name, status, specie, gender, origin_id, location_id, created_At) VALUES ('Lighthouse Keeper', 'Dead', 'Alien', 'Male', 9, 9, NOW());
+INSERT INTO tb_personagem (name, status, specie, gender, origin_id, location_id, created_At) VALUES ('Beebo', 'Dead', 'Human', 'Male', 10, 10, NOW());
+
 

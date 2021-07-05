@@ -8,32 +8,32 @@ public class PersonagemLocalDTO /*extends RepresentationModel<PersonagemLocalDTO
 
 	private static final long serialVersionUID = 1L;
 	
-	private Long id;
+	
 	private String name;
+	private String url;
 
 	
 	public PersonagemLocalDTO() {
 		
 	}
 	
-	public PersonagemLocalDTO(Long id, String name) {
-		this.id = id;
+	public PersonagemLocalDTO(String name) {
 		this.name = name;
 	}
 	
 	public PersonagemLocalDTO(Local entity) {
-		id = entity.getId();
 		name = entity.getName();
+		url = "http://localhost:8080/locais/" + entity.getId();
 	}
 	
 	
 
-	public Long getId() {
-		return id;
+	public String getUrl() {
+		return url;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setUrl(String url) {
+		this.url = url;
 	}
 
 	public String getName() {

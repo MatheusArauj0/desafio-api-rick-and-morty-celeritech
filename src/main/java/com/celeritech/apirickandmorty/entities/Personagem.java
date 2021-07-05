@@ -27,7 +27,7 @@ public class Personagem implements Serializable{
 	private String status;
 	private String specie;
 	private String gender;
-	//private String url;
+	
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant createdAt;

@@ -46,7 +46,7 @@ public class LocalDTO extends RepresentationModel<LocalDTO> implements Serializa
 	
 	public LocalDTO(Local entity, Set<Personagem> personagens) {
 		this(entity);
-		personagens.forEach(p -> this.residents.add(p.getName()));
+		personagens.forEach(p -> this.residents.add("http://localhost:8080/personagens/" + p.getId()));
 	}
 
 	public Long getId() {
