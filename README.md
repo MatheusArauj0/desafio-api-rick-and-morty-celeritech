@@ -1,5 +1,5 @@
 # desafio-api-rick-and-morty-celeritech
-<h4>Sejam bem vindos Devs!!!</h4>
+<h4>SEJAM BEM VINDOS DEVS!!!</h4>
 <hr/>
 <p>Para testar a api você devera fazer um git clone na sua máquina ou baixar o projeto zipado e depois importar pra sua IDE.</p>
 <p>Foi usada a IDE Spring Suit Tools para o desenvolvimento.</p>
@@ -14,3 +14,9 @@
 <p>Acredito que importando a minha collection do postman o ambiente já esteja configurado, mas caso nãa esteja entre em contato comigo por email!</p>
 <p>Quando você fizer o login sera gerado hash do token, copie esse hash!</p>
 <p>Agora é só você ir na aba "Authorization" de cada request mudar o "Type" para BEARER TOKEN e inserir o hash copiado no input que irá aparecer e pronto!</p>
+<br/>
+<h2>OBSERVAÇÕES:</h2>
+<p>O HATEOAS não foi implementado 100%, você só ira consguir navegar pelos links gerados na própia entidade!</p>
+<p>Por Exemplo:</p>
+<p>Quando der um  GET em All personagens o objeto JSON vai te retornar um link próprio de cada obejto mas para os locais de Origin e Location não foi gerado link pois não consegui implementar 100%.</p>
+<p>E consequente mente no GET all Locais acontecera o mesmo, irá te trazer um link próprio de cada Local mas não irar trazer o link do residents de cada local, apenas o seu nome!</p>
