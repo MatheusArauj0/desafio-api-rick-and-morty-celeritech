@@ -27,7 +27,6 @@ public class PersonagemDTO extends RepresentationModel<PersonagemDTO> implements
 	
 	public PersonagemDTO(Long id, String name, String status, String specie, String gender, PersonagemLocalDTO origin,
 			PersonagemLocalDTO location, Instant createdAt) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.status = status;

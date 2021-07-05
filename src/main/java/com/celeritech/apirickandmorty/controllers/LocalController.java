@@ -32,11 +32,9 @@ public class LocalController {
 	public ResponseEntity<Page<LocalDTO>> findAll(Pageable pageable){
 		Page<LocalDTO> list = service.findAllPaged(pageable);
 		
-		for(LocalDTO local : list) {
-			long id = local.getId();
-			Link link = WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(LocalController.class).findById(id)).withSelfRel();
-			local.add(link);
-		}
+		list.forEach(l ->{
+			l.add(WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(LocalController.class).findById(l.getId())).withSelfRel());
+		});
 		
 		return ResponseEntity.ok().body(list);
 	}

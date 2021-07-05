@@ -34,11 +34,10 @@ public class PersonagemController {
 	public ResponseEntity<Page<PersonagemDTO>> findAll(Pageable pageable){
 		Page<PersonagemDTO> list = service.findAllPaged(pageable);
 		
-		for(PersonagemDTO personagem : list) {
-			long id = personagem.getId();
-			Link link = WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(PersonagemController.class).findById(id)).withSelfRel();
-			personagem.add(link);
-		}
+		list.forEach(p -> {
+			p.add(WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(PersonagemController.class).findById(p.getId())).withSelfRel());
+		});
+		
 		
 		
 		return ResponseEntity.ok().body(list);
