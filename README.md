@@ -7,7 +7,7 @@
 <br/>
 <p>Segue o link da minha collection do Postman para ajudar nas requisições dos endpoints: https://www.getpostman.com/collections/a9a16c59b37c42d9088b</p>
 <p>O link acima deverá ser importado dentro do seu Postman</p>
-<p>Atenção: se não tiver uma variavel de ambiente host configurada apague a variavel {{host}} e coloque http://localhost:8080/nomeEndPoint</p>
+<p>Atenção: se não tiver uma variavel de ambiente host configurada, apague a variavel {{host}} e coloque http://localhost:8080/nomeEndPoint</p>
 <p>Essa api possui 4 endpoints: /personagens, /locais, /users, /oauth/token </p>
 <p>Atenção: Apenas os métodos GET estão livre para consulta ao publico!</p>
 <p>Para acessar os demais métodos POST, PUT e DELETE será necessário fazer um login na aplicação</p>
