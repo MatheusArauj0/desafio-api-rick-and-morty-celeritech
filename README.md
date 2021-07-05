@@ -9,7 +9,7 @@
 <p>O link acima deverá ser importado dentro do seu Postman</p>
 <p>Atenção: se não tiver uma variavel de ambiente host configurada, apague a variavel {{host}} e coloque http://localhost:8080/nomeEndPoint</p>
 <p>Essa api possui 4 endpoints: /personagens, /locais, /users, /oauth/token </p>
-<p>Atenção: Apenas os métodos GET estão livre para consulta ao publico!</p>
+<p>Atenção: Apenas os métodos GET estão livres para consulta ao publico!</p>
 <p>Para acessar os demais métodos POST, PUT e DELETE será necessário fazer um login na aplicação</p>
 <p>Acredito que importando a minha collection do postman o ambiente já esteja configurado, mas caso nãa esteja entre em contato comigo por email!</p>
 <p>Quando você fizer o login sera gerado hash do token, copie esse hash!</p>
